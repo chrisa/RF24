@@ -25,7 +25,7 @@
 #define RF24_RP2
 
 #define _BV(x) (1 << (x))
-#define _SPI   SPI
+#define _SPI   PicoSPI
 #define RF24_SPI_PTR
 
 #ifdef RF24_DEBUG

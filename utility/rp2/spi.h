@@ -18,11 +18,11 @@
 // implement spi_init() & spi_deinit()
 #define SPI_HAS_TRANSACTION 1
 
-class SPI
+class PicoSPI
 {
 
 public:
-    SPI();
+    PicoSPI();
 
     /**
      * Start SPI
@@ -60,7 +60,7 @@ public:
     /** deinit the SPI bus (using hw_id passed to begin()) */
     void endTransaction();
 
-    virtual ~SPI();
+    virtual ~PicoSPI();
 
 private:
     /** the ID of the hardware driven SPI bus */
